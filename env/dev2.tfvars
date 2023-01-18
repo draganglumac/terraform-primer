@@ -1,1 +1,1 @@
-environment-name = "dev2"
+environment_name = "dev2"
