@@ -5,9 +5,17 @@ terraform {
       version = "~> 4.0"
     }
   }
+
+  backend "s3" {
+    bucket = "terraform-remote-20230126"
+    key    = "hello-world/terraform.tfstate"
+    region = "eu-west-2"
+    dynamodb_table = "terraform-locks"
+  }
 }
 
 # Configure the AWS Provider
 provider "aws" {
   region = "eu-west-2"
 }
+
