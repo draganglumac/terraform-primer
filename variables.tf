@@ -1,9 +1,9 @@
-variable "instance-name" {
+variable "instance_name" {
   type = string
   default = "HelloWorld"
 }
 
-variable "environment-name" {
+variable "environment_name" {
   type = string
   nullable = true
   default = null
