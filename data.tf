@@ -1,4 +1,4 @@
-data "aws_ami" "ubuntu-free-tier" {
+data "aws_ami" "ubuntu_free_tier" {
   most_recent = true
   name_regex  = "^ubuntu\\/images\\/hvm-ssd\\/ubuntu-jammy-22.04-amd64-server-[0-9]*$"
   owners      = ["amazon"]
