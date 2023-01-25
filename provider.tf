@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-${var.account_id}-remote-20230126"
+    bucket = "terraform-${insert-account-id-here}-remote-20230126"
     key    = "hello-world/terraform.tfstate"
     region = "eu-west-2"
     dynamodb_table = "terraform-locks"
