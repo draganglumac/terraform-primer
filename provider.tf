@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-remote-20230126"
+    bucket = "terraform-${var.account_id}-remote-20230126"
     key    = "hello-world/terraform.tfstate"
     region = "eu-west-2"
     dynamodb_table = "terraform-locks"
@@ -18,4 +18,3 @@ terraform {
 provider "aws" {
   region = "eu-west-2"
 }
-
